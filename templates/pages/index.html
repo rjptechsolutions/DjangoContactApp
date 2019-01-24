@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <!-- Showcase -->
+  <section id="showcase">
+        <div class="container text-center">
+          <div class="home-search p-5">
+            <div class="overlay p-5">
+              <h1 class="display-4 mb-4">
+                Searching Just Got So Easy
+              </h1>
+              <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quas, asperiores eveniet vel nostrum magnam
+                voluptatum tempore! Consectetur, id commodi!</p>
+              <div class="search">
+                <form action="{% url 'search' %}">
+                  <!-- Form Row 1 -->
+                  <div class="form-row">
+                    <div class="col-md-12 mb-12">
+                      <label class="sr-only">Keywords</label>
+                      <input type="text" name="keywords" class="form-control" placeholder="Keyword (Pool, Garage, etc)">
+                    </div>
+                  <button class="btn btn-secondary btn-block mt-4" type="submit">Submit form</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+    
+    
+
+{% endblock %}
